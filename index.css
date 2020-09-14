@@ -1,0 +1,43 @@
+body {
+    color: black;
+    background-color: darkcyan;
+}
+
+h1 {
+    color: white;
+}
+
+a:link {
+    color: beige;
+}
+
+a:hover {
+    color:blue;
+}
+
+.menu {
+    background-color: black;
+}
+
+.menu a {
+    color: white;
+}
+ul.menu li {
+    display:inline;
+    padding: 50px;
+
+}
+
+.experience {
+      background-color: white;
+      font-family: "Felix Titling";
+}
+
+.experience h1 {
+    color: black;
+}
+
+ul#contact-list  li{
+    font-family: Georgia;
+    display: inline
+}
