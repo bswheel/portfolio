@@ -1,5 +1,5 @@
 body {
-    color: black;
+    color: white;
     background-color: darkcyan;
 }
 
@@ -8,29 +8,58 @@ h1 {
 }
 
 a:link {
-    color: beige;
+    color: cyan;
 }
 
 a:hover {
-    color:blue;
+    color: white;
 }
 
 .menu {
     background-color: black;
+    display: flex;
+    justify-content: flex-start;
 }
 
-.menu a {
+.menu-list a {
     color: white;
 }
-ul.menu li {
-    display:inline;
-    padding: 50px;
+ul.menu-list li {
+    display: inline;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px;
 
 }
 
-.experience {
-      background-color: white;
-      font-family: "Felix Titling";
+.feature {
+    background-color: darkslategrey;
+    color: white;
+    font-family: "Felix Titling";
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.feature2 {
+    background-color: darkslategrey;
+    color: white;
+    font-family: "Felix Titling";
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.feature3 {
+    background-color: darkslategrey;
+    color: white;
+    font-family: "Felix Titling";
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 .experience h1 {
@@ -40,4 +69,21 @@ ul.menu li {
 ul#contact-list  li{
     font-family: Georgia;
     display: inline
+}
+
+@media only screen and (min-width: 501px) and (max-width: 960px){
+    .menu,
+    .feature3{
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 961px){
+    .menu,
+    .feature,
+    .feature2
+    .feature3{
+        flex-direction: row;
+        align-self: flex-end;
+    }
 }
